@@ -8,19 +8,18 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
+import { useRef } from "react";
 function App() {
+  
   return (
-    <div className="App">
+    <div className="App scroll-smooth">
       <Navbar />
-      <Routes>
 
-      <Route path="/about" Component={About}/>
-      </Routes>
-      <Home />
-      <About />
+      <Home  />
+      <About  />
       <Skills />
-      {/* <Projects />
-       */}
+       <Projects />
+       
        <Contact/>
     </div>
   );

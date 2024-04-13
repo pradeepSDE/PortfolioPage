@@ -1,11 +1,11 @@
 import React from "react";
-
+import { FaLaptopCode } from "react-icons/fa";
 const Skills = () => {
   return (
-    <div className="items-center  mb-20 overflow-auto  enter  flex flex-col text-center">
-      <h1 className="text-5xl font-bold text-center">Skills</h1>
+    <div id="skills" className="items-center your-element    mb-20 overflow-auto  enter  flex flex-col text-center">
+      <h1 className="text-5xl font-bold uppercase flex justify-center  text-center"> <FaLaptopCode className="mx-3"/> Skills</h1>
       <div className="grid  grid-cols-2 mt-16 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4  px-2 ">
-        <div className=" h-full w-full shadow-lg shadow-blue-400 h-48 w-48 p-5  object-cover items-center rounded-lg border-slate-100 bg-blue-400 flex flex-col  hover:bg-blue-500  justify-evenly">
+        <div className=" h-full w-full shadow-lg shadow-blue-400 h-48 w-8 p-5  object-cover items-center rounded-lg border-slate-100 bg-blue-400 flex flex-col  hover:bg-blue-500  justify-evenly">
           <img className="h-16 w-16 mx-8" src="/cpp.png" alt="" />
           <span className="text-md mt-1 font-semibold">C++</span>
         </div>
@@ -21,8 +21,8 @@ const Skills = () => {
           <img className="h-16 w-16 mx-8" src="/html.png" alt="" />{" "}
           <span className="text-md mt-1 font-semibold">HTMl</span>
         </div>
-        <div className="  h-full w-full shadow-lg shadow-orange-200 p-5 h-48 w-48 object-cover items-center rounded-lg hover:bg-orange-400 border-slate-100 bg-orange-300 flex flex-col   justify-evenly">
-          <img className="h-16 w-16 mx-8" src="/git.png" alt="" />{" "}
+        <div className="  h-full w-full  shadow-lg shadow-orange-200 p-5 h-48 w-48 object-cover items-center rounded-lg hover:bg-orange-400 border-slate-100 bg-orange-300 flex flex-col   justify-evenly">
+          <img className="h-16  w-16 mx-8" src="/git.png" alt="" />{" "}
           <span className="text-md mt-1 font-semibold">Git</span>
         </div>
         <div className=" h-full w-full shadow-lg shadow-indigo-200 p-5 h-48 w-48 object-cover rounded-lg border-slate-100 hover:bg-indigo-200 bg-indigo-100 items-center   flex flex-col  justify-evenly">

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { IoIosContact } from "react-icons/io";
 const Contact = () => {
+  const scref = useRef(null)
+
   return (
-    <div className="m-4">
-      <h1 className="font-bold text-5xl justify-center  flex items-center">
+    <div ref={scref} id="contact" className="m-4 overflow-y-auto bg-indigo-50 p-4">
+      <h1 className="font-bold text-5xl scroll-smooth justify-center  flex items-center">
        <IoIosContact className="mx-2 justify-center" /> Contact <span className="text-blue-500 ml-3"> Me</span>
       </h1>
       <form class="w-full mt-10 mx-auto max-w-lg">

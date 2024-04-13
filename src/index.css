@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
  
+.slick-slide > div{
+    margin : 0 10px
+}
+
+.your-div:hover {
+    transform: rotateY(10deg) skewX(-2deg); /* Adjust rotation and skew for desired effect */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow for depth */
+  }
+
+  .your-element {
+    background-color: #f8f3f9; /* Light pink */
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAADuWHt7AAAACXBIWXMAAArEAAE1RAQAzwAAAABlBMVEUAAAD////////////////////////////////+/8AAAD8AAP8A//8AAA/8AAP8A//8AAA/8AAP8A//8AAA/8AAP8A//8AAA/8AAP8A//8AAA/8AAP+ZAAALzwAAAABYR40lAAAAJcEhAAYAAAEGAACH+IAAAKgAiBgAAAAlwSFlzAAALEwAAACxABJzBJgAAAABh0RVhAAABCAwAAXNCPv4YAAAAHdElNRQfCBB4EMC42rJcAAAAZdEVYdFNvZnR3ZWQgOEJJTVhodGhjIwAAAAYdFJwCdZLzG3MNqsBJq69QW//////////8AAA=");
+  }

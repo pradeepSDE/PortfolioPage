@@ -1,5 +1,4 @@
 import { useState } from "react"; // import state
-
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 

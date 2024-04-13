@@ -6,8 +6,25 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import myPDF from  './Pradeep_bisen_resume.pdf'
 const Home = () => {
   const el = React.useRef(null);
+
+  const downloadFile = () => {
+    
+    const blob = new Blob([myPDF], { type: "application/pdf" }); // Adjust type for different files (.pdf, .jpg, etc.)
+    const url = window.URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Pradeep_bisen_resume.pdf"; // Set desired filename
+    link.click();
+
+    // Optional: Revoke the object URL to avoid memory leaks
+    window.URL.revokeObjectURL(url);
+  };
+
+
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["a Web Developer", " an engineer", "a Frontend developer"],
@@ -20,7 +37,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className=" bodybg mb-20   sm:flex justify-center items-center">
+    <div id="Home" className=" bodybg mb-20   sm:flex justify-center items-center">
      
        
      
@@ -41,7 +58,7 @@ const Home = () => {
             className="element text-blue-500 ml-2 ml-blue-500"
           ></span>
         </h2>
-        <button className="px-5 py-3 flex mr-auto ml-1 sm:ml-12 rounded-full items-center mt-10 hover:justify-between  text-xl text-white font-semibold border-blue-500 bg-blue-700 border-2 shadow-lg shadow-blue-400 hover:bg-blue-900 outline-2 outline-blue-400  ">
+        <button onClick={downloadFile} className="px-5 py-3 flex mr-auto ml-1 sm:ml-12 rounded-full items-center mt-10 hover:justify-between  text-xl text-white font-semibold border-blue-500 bg-blue-700 border-2 shadow-lg shadow-blue-400 hover:bg-blue-900 outline-2 outline-blue-400  ">
           <span className="mx-2">Resume</span>{" "}
           <IoMdCloudDownload className="" />
         </button>
@@ -73,9 +90,9 @@ const Home = () => {
           </div>
         </div> */}
       </div>
-      <div className=" sm:flex-1 order-2  items-center   justify-center  ">
+      <div className=" hover:scale-110 hover:rotate-z-45 your-div  transition duration-500  sm:flex-1 order-2  items-center   justify-center  ">
       <img
-          className="size-9/12 rounded-full mt-20 my-auto border-solid border-transparent mr-4 p-4 ml-10 sm:ml-auto"
+          className="size-9/12 bg-gradient-to-br from-sky-300 to-indigo-600  shadow-xl shadow-blue-400 rounded-full mt-20 my-auto border-solid border-transparent mr-4  ml-10 sm:ml-auto"
           src="/profile.png"
           alt="pradeep"
         />
