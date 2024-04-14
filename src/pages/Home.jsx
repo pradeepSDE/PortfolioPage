@@ -10,19 +10,7 @@ import myPDF from  './Pradeep_bisen_resume.pdf'
 const Home = () => {
   const el = React.useRef(null);
 
-  const downloadFile = () => {
-    
-    const blob = new Blob([myPDF], { type: "application/pdf" }); // Adjust type for different files (.pdf, .jpg, etc.)
-    const url = window.URL.createObjectURL(blob);
-
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "Pradeep_bisen_resume.pdf"; // Set desired filename
-    link.click();
-
-    // Optional: Revoke the object URL to avoid memory leaks
-    window.URL.revokeObjectURL(url);
-  };
+ 
 
 
   useEffect(() => {
@@ -58,10 +46,13 @@ const Home = () => {
             className="element text-blue-500 ml-2 ml-blue-500"
           ></span>
         </h2>
-        <button onClick={downloadFile} className="px-5 py-3 flex mr-auto ml-1 sm:ml-12 rounded-full items-center mt-10 hover:justify-between  text-xl text-white font-semibold border-blue-500 bg-blue-700 border-2 shadow-lg shadow-blue-400 hover:bg-blue-900 outline-2 outline-blue-400  ">
+        <a  target="_blank" href="https://drive.google.com/file/d/1x78vdLwLcpRZxsyBvvDiGSsoJsa7O4fN/view?usp=drive_link">
+
+        <button  className="px-5 py-3 flex mr-auto ml-1 sm:ml-12 rounded-full items-center mt-10 hover:justify-between  text-xl text-white font-semibold border-blue-500 bg-blue-700 border-2 shadow-lg shadow-blue-400 hover:bg-blue-900 outline-2 outline-blue-400  ">
           <span className="mx-2">Resume</span>{" "}
           <IoMdCloudDownload className="" />
         </button>
+        </a>
         <div className="flex mr-auto sm:ml-14 mt-10 items-center gap-2 justify-center">
           <FaGithub  className="h-20 w-20 p-4  hover:bg-indigo-400 rounded-full bg-slate-300 "/>
           <FaInstagram className="h-20 w-20 p-4 hover:bg-rose-200 rounded-full bg-slate-300 " />

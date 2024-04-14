@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state w
   return (
-    <div className="fixed z-10 top-0 w-full items-center flex justify-between  bg-gray-50 mb-1 p-2  border-2 border-b-3 shadow-md shadow-cyan-100 border-b-blue-300  ">
+    <div className="fixed py-4 z-10 top-0 w-full items-center flex justify-between  bg-gray-50 mb-1 p-2  border-2 border-b-3 shadow-md shadow-cyan-100 border-b-blue-300  ">
       <div>
-        <h1 className="  text-3xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
+        <h1 className="hidden lg:block text-3xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
           Pradeep
         </h1>
       </div>
@@ -29,12 +29,12 @@ const Navbar = () => {
         </div>
         <div>
           <h1 className="text-lg hover:border-b-2 uppercase hover:border-b-blue-300 hover:text-blue-500  hidden lg:block font-semibold p-2 m-1">
-            Projects
+            <a href="/#projects">Projects</a>
           </h1>
         </div>
         <div>
           <h1 className="text-lg hover:border-b-2 uppercase hover:border-b-blue-300 hover:text-blue-500  font-semibold hidden lg:block p-2 m-1">
-            <a className="scroll-smooth" href="/#contact">Contact</a>
+            <a className="scroll-smooth transition duration-500"  href="/#contact">Contact</a>
           </h1>
         </div>
       
@@ -72,16 +72,16 @@ const Navbar = () => {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/#about">About  </a>
+              <li className="border-b border-gray-400 my-4 uppercase">
+                <a href="/#about">About Me </a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Skills</a>
+              <li className="border-b border-gray-400 my-4 uppercase">
+                <a href="/#skills">Skills</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Projects</a>
+              <li className="border-b border-gray-400 my-4 uppercase">
+                <a href="/#projects">Projects</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
+              <li className="border-b border-gray-400 my-4 uppercase">
                 <a href="/#contact">Contact</a>
               </li>
             </ul>

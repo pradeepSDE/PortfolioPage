@@ -2,8 +2,8 @@ import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 const Skills = () => {
   return (
-    <div id="skills" className="items-center your-element    mb-20 overflow-auto  enter  flex flex-col text-center">
-      <h1 className="text-5xl font-bold uppercase flex justify-center  text-center"> <FaLaptopCode className="mx-3"/> Skills</h1>
+    <div id="skills" className="items-center your-element pb-10  mb-20 overflow-auto  enter  flex flex-col text-center">
+      <h1 className="text-5xl font-bold uppercase flex justify-center  pt-6 text-center"> <FaLaptopCode className="mx-3"/> Skills</h1>
       <div className="grid  grid-cols-2 mt-16 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4  px-2 ">
         <div className=" h-full w-full shadow-lg shadow-blue-400 h-48 w-8 p-5  object-cover items-center rounded-lg border-slate-100 bg-blue-400 flex flex-col  hover:bg-blue-500  justify-evenly">
           <img className="h-16 w-16 mx-8" src="/cpp.png" alt="" />

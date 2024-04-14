@@ -1,14 +1,36 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { IoIosContact } from "react-icons/io";
+import emailjs from 'emailjs-com';
 const Contact = () => {
   const scref = useRef(null)
 
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: ''
+    });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        .then((result) => {
+          console.log('Email sent successfully:', result.text);
+          // You can show a success message to the user here
+        }, (error) => {
+          console.error('Email could not be sent:', error.text);
+          // You can show an error message to the user here
+        });
   return (
-    <div ref={scref} id="contact" className="m-4 overflow-y-auto bg-indigo-50 p-4">
+    <div ref={scref} id="contact" className="m-4 overflow-y-auto scroll-smooth bg-indigo-50 p-4">
       <h1 className="font-bold text-5xl scroll-smooth justify-center  flex items-center">
        <IoIosContact className="mx-2 justify-center" /> Contact <span className="text-blue-500 ml-3"> Me</span>
       </h1>
-      <form class="w-full mt-10 mx-auto max-w-lg">
+      <form class="w-full mt-10 mx-auto max-w-lg" onSubmit={handleSubmit}>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -22,6 +44,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="Jane"
+              value={formData.name}
+              onChange={handleChange}
             />
             {/* <p class="text-red-500 text-lg italic">
               Please fill out this field.
@@ -39,6 +63,7 @@ const Contact = () => {
               id="grid-last-name"
               type="text"
               placeholder="Doe"
+             
             />
           </div>
         </div>
@@ -54,6 +79,8 @@ const Contact = () => {
               class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="email"
               type="email"
+              value={formData.email}
+              onChange={handleChange}
             />
             <p class="text-gray-600 text-2xs italic">
               Some tips - as long as needed
@@ -71,6 +98,8 @@ const Contact = () => {
             <textarea
               class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
               id="message"
+              value={formData.message}
+              onChange={handleChange}
             ></textarea>
           </div>
         </div>

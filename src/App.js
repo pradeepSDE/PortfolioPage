@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import { useRef } from "react";
+import Footer from "./components/Footer";
 function App() {
   
   return (
@@ -21,6 +22,7 @@ function App() {
        <Projects />
        
        <Contact/>
+       <Footer/>
     </div>
   );
 }

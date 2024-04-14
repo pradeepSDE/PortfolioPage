@@ -64,7 +64,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className=" p-5 mb-20 bg-gradient-to-r from-cyan-100 to-blue-100   w-full mx-auto ">
+    <div id="projects" className="  pb-10 mb-20 bg-gradient-to-r from-cyan-100 to-blue-100   w-full mx-auto ">
       <div className="mt-20 ">
         <h1 className="text-5xl p-5 mb-5 flex  justify-center font-bold text-center uppercase"> <GrProjects className="mx-4"/> projects</h1>
         <Slider {...settings}>
