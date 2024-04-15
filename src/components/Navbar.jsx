@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="fixed py-4 z-10 top-0 w-full items-center flex justify-between  bg-gray-50 mb-1 p-2  border-2 border-b-3 shadow-md shadow-cyan-100 border-b-blue-300  ">
       <div>
-        <h1 className="hidden lg:block text-3xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
+        <h1 className="hidden font-poppins lg:block text-3xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
           Pradeep
         </h1>
       </div>

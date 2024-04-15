@@ -26,17 +26,17 @@ const Home = () => {
       id="Home"
       className=" bodybg mb-20 pb-20 sm:flex justify-center items-center"
     >
-      <div className="flex-1   flex-col justify-center p-2  m-1 items-center ">
-        <h1 className="p-2 mt-24  font-bold ml-1 sm:ml-12  mr-auto text-4xl sm:text-6xl ">
+      <div className="flex-1 sm:ml-14 pl-4 flex-col justify-center p-2  m-1 items-center ">
+        <h1 className="p-2 mt-24 font-poppins font-extrabold ml-1 sm:ml-12  mr-auto text-4xl sm:text-6xl ">
           Hi There, <br />
           <h1 className="mt-5">
             I'm{" "}
-            <span className="   text-4xl sm:text-6xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
+            <span className=" font-Rubik  text-4xl sm:text-6xl font-semibold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-indigo-800">
               Pradeep bisen
             </span>
           </h1>
         </h1>
-        <h2 className="p-2 mt-4 mr-auto   font-semibold ml-1 sm:ml-12 text-xl sm:text-3xl ">
+        <h2 className="p-2 mt-4 mr-auto font-poppins  font-bold ml-1 sm:ml-12 text-xl sm:text-3xl ">
           I'm{" "}
           <span
             ref={el}
