@@ -12,7 +12,7 @@ const About = () => {
       </h1>
       <div className="sm:flex    m-4 mt-10">
         <div className="  w-1/2 h-1/2 mx-auto   rounded-xl grayscale hover:grayscale-0 transition duration-500 sm:ml-10 border-4   border-blue-500 shadow-lg shadow-blue-400 ">
-          <img className="rounded-xl h-3/4" src="/pradeep1.jpg" alt="" />
+          <img className="rounded-xl h-3/4" src="/Pradeep1.jpg" alt="" />
         </div>
 
         <div className="text-left  sm:ml-24 ml-12 ">
