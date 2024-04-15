@@ -4,9 +4,11 @@ import { FaHeart } from "react-icons/fa";
 import { FcLike } from 'react-icons/fc';
 const Footer = () => {
   return (
-    <div>
+    <div className='bg-[#0e0741]'>
 
-    <div className='bg-[#0e0741] h-24 flex  justify-center items-center'>
+
+      <h1 className='text-white' >Thanks for visiting my portfolio</h1>
+    <div className='bg-[#0e0741] h-24 flex   justify-center items-center'>
      
       <h1 className='font-semibold text-white text-lg flex items-center p-1 '>Made with <FcLike className='m-2 '/> by Pradeep Bisen</h1>
     </div>
