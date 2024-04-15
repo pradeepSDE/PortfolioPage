@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div
       id="Home"
-      className=" bodybg mb-20   sm:flex justify-center items-center"
+      className=" bodybg mb-20 pb-20 sm:flex justify-center items-center"
     >
       <div className="flex-1   flex-col justify-center p-2  m-1 items-center ">
         <h1 className="p-2 mt-24  font-bold ml-1 sm:ml-12  mr-auto text-4xl sm:text-6xl ">
@@ -89,9 +89,9 @@ const Home = () => {
           </div>
         </div> */}
       </div>
-      <div className=" hover:scale-110 hover:rotate-z-45 your-div  transition duration-500  sm:flex-1 order-2  items-center   justify-center  ">
+      <div className="  hover:scale-105 mt-20  hover:rotate-z-45 your-div  transition duration-500  flex sm:flex-1 order-2  items-center   justify-center  ">
         <img
-          className="size-9/12 bg-gradient-to-br from-sky-300 to-indigo-600  shadow-xl shadow-blue-400 rounded-full mt-20 my-auto border-solid border-transparent mr-4  ml-10 sm:ml-auto"
+          className="size-7/12  sm:mt-10 bg-gradient-to-br from-sky-300 to-indigo-600  shadow-xl shadow-blue-400 rounded-full  border-solid border-transparent    "
           src="/profile.png"
           alt="pradeep"
         />

@@ -15,7 +15,7 @@ const About = () => {
           <img className="rounded-xl h-3/4" src="/pradeep1.jpg" alt="" />
         </div>
 
-        <div className="text-left  ml-24 ">
+        <div className="text-left  sm:ml-24 ml-12 ">
           <h2 className="font-semibold mt-8 mr-auto mb-5 text-3xl">
             I'm Pradeep <span className="text-blue-600 "> Bisen</span>
           </h2>
