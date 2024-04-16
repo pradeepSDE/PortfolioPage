@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { IoIosContact } from "react-icons/io";
 import emailjs from 'emailjs-com';
+
 const Contact = () => {
   const scref = useRef(null)
 
@@ -30,13 +31,13 @@ const Contact = () => {
           // You can show an error message to the user here
         });}
   return (
-    <divx id="contact" className="m-4 overflow-y-auto scroll-smooth bg-indigo-50 p-4">
+    <div id="contact" className=" overflow-y-auto scroll-smooth p-4 bg-indigo-50 ">
       <h1 className="font-bold text-5xl scroll-smooth justify-center  flex items-center">
        <IoIosContact className="mx-2 justify-center" /> Contact <span className="text-blue-500 ml-3"> Me</span>
       </h1>
-      <form  ref={scref} class="w-full mt-10 mx-auto max-w-lg" onSubmit={handleSubmit}>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <form  ref={scref} class="w-full  mt-10 px-8 mx-auto max-w-lg" onSubmit={handleSubmit}>
+        <div class="flex flex-wrap  -mx-3 mb-6">
+          <div class="w-full md:w-1/2  px-3 mb-6 md:mb-0">
             <label
               class="block uppercase tracking-wide text-gray-700 text-lg font-bold mb-2"
               for="grid-first-name"
@@ -52,9 +53,7 @@ const Contact = () => {
               value={formData.from_name}
               onChange={handleChange}
             />
-            {/* <p class="text-red-500 text-lg italic">
-              Please fill out this field.
-            </p> */}
+           
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label
@@ -91,9 +90,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
             />
-            <p class="text-gray-600 text-2xs italic">
-              Some tips - as long as needed
-            </p>
+           
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -113,10 +110,10 @@ const Contact = () => {
             ></textarea>
           </div>
         </div>
-        <div class="md:flex md:items-center">
-          <div class="md:w-1/3 ">
+        <div class="md:flex md:w-1/3 md:items-center">
+          <div class="md:w-1/3 flex p-4 ">
             <button
-              class="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-full shadow-lg shadow-blue-400 " 
+              class="shadow bg-blue-500  hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-full shadow-lg shadow-blue-400 " 
               type="button"
 
               onClick={handleSubmit}
@@ -124,10 +121,9 @@ const Contact = () => {
               Send
             </button>
           </div>
-          <div class="md:w-2/3"></div>
         </div>
       </form>
-    </divx>
+    </div>
   );
 };
 

@@ -54,17 +54,17 @@ const Home = () => {
         </a>
         <div className="flex mr-auto sm:ml-14 mt-10 items-center gap-2 justify-center">
           <a href="https://github.com/pradeepSDE" target="blank">
-            <FaGithub className="h-16 w-16 p-3  hover:bg-indigo-400 rounded-full bg-slate-300 " />
+            <FaGithub className="h-16 w-16 p-3  hover:text-indigo-900 rounded-full bg-slate-200 " />
           </a>
           <a href="https://www.instagram.com/pradeepbisen60/" target="blank">
-            <FaInstagram className="h-16 w-16 p-3 hover:bg-rose-200 rounded-full bg-slate-300 " />
+            <FaInstagram className="h-16  w-16 p-3 hover:bg-rose-200 rounded-full bg-slate-200 " />
           </a>
           <a href="https://www.linkedin.com/in/pradeep-bisen-725690202/" target="blank">
-            <FaLinkedin className="h-16 w-16 p-3 hover:bg-blue-300 rounded-full bg-slate-300 " />
+            <FaLinkedin className="h-16 w-16 p-3 hover:text-blue-700  rounded-full bg-slate-200 " />
           </a>
 
           <a href="https://twitter.com/pradeepbisen18" target="blank">
-            <FaXTwitter className="h-16 w-16 p-3 hover:bg-slate-400 rounded-full bg-slate-300 " />
+            <FaXTwitter className="h-16  hover:bg-black hover:text-white w-16 p-3 hover:bg-slate-400 rounded-full bg-slate-300 " />
           </a>
         </div>
         {/* <div className="flex  mr-auto ml-28 h-48 w-48 object-cover items-center    justify-evenly   ">
