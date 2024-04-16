@@ -5,32 +5,36 @@ const Contact = () => {
   const scref = useRef(null)
 
     const [formData, setFormData] = useState({
-      name: '',
+      from_name: '',
+      last_name : '',
       email: '',
       message: ''
     });
   
-    const handleChange = (e) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
+    const handleChange = async(e) => {
+      
+      await setFormData({ ...formData, [e.target.name]: e.target.value });
+    
     };
   
     const handleSubmit = (e) => {
       e.preventDefault();
-  
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+   
+      emailjs.sendForm('service_na7jol1', 'template_i1jlgmu', scref.current, '5v90ykZ02ZoMgzeN5')
         .then((result) => {
-          console.log('Email sent successfully:', result.text);
+          // console.log('Email sent successfully:', result.text);
+          alert("your response has been submitted successfuly ")
           // You can show a success message to the user here
         }, (error) => {
           console.error('Email could not be sent:', error.text);
           // You can show an error message to the user here
         });}
   return (
-    <div ref={scref} id="contact" className="m-4 overflow-y-auto scroll-smooth bg-indigo-50 p-4">
+    <divx id="contact" className="m-4 overflow-y-auto scroll-smooth bg-indigo-50 p-4">
       <h1 className="font-bold text-5xl scroll-smooth justify-center  flex items-center">
        <IoIosContact className="mx-2 justify-center" /> Contact <span className="text-blue-500 ml-3"> Me</span>
       </h1>
-      <form class="w-full mt-10 mx-auto max-w-lg" onSubmit={handleSubmit}>
+      <form  ref={scref} class="w-full mt-10 mx-auto max-w-lg" onSubmit={handleSubmit}>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -44,7 +48,8 @@ const Contact = () => {
               id="grid-first-name"
               type="text"
               placeholder="Jane"
-              value={formData.name}
+              name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
             />
             {/* <p class="text-red-500 text-lg italic">
@@ -63,6 +68,9 @@ const Contact = () => {
               id="grid-last-name"
               type="text"
               placeholder="Doe"
+              name="last_name"
+              onChange={handleChange}
+              value={formData.last_name}
              
             />
           </div>
@@ -79,6 +87,7 @@ const Contact = () => {
               class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="email"
               type="email"
+              name="email"
               value={formData.email}
               onChange={handleChange}
             />
@@ -98,6 +107,7 @@ const Contact = () => {
             <textarea
               class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
               id="message"
+              name="message"
               value={formData.message}
               onChange={handleChange}
             ></textarea>
@@ -108,6 +118,8 @@ const Contact = () => {
             <button
               class="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-full shadow-lg shadow-blue-400 " 
               type="button"
+
+              onClick={handleSubmit}
             >
               Send
             </button>
@@ -115,7 +127,7 @@ const Contact = () => {
           <div class="md:w-2/3"></div>
         </div>
       </form>
-    </div>
+    </divx>
   );
 };
 
