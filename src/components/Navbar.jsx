@@ -47,13 +47,14 @@ const Navbar = () => {
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+           
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav " : "hideMenuNav"}> 
+          <div className= {isNavOpen ? "showMenuNav " : "hideMenuNav"}> 
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -71,18 +72,18 @@ const Navbar = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex  flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b hover:text-blue-500 border-gray-400 text-xl my-4 uppercase">
+            <ul className="MENU-LINK-MOBILE-OPEN font-poppins flex gap-4 flex-col items-center justify-between min-h-[250px]">
+              <li className="border-b hover:text-blue-500 m-8 border-gray-400 text-xl my-4 uppercase">
                 <a href="/#about" onClick={() => setIsNavOpen(false)}>About Me </a>
               </li>
-              <li className="border-b hover:text-blue-500 border-gray-400 text-xl my-4 uppercase">
+              <li className="border-b hover:text-blue-500 m-8 border-gray-400 text-xl my-4 uppercase">
                 <a href="/#skills" onClick={() => setIsNavOpen(false)}>Skills</a>
               </li>
-              <li className="border-b hover:text-blue-500 border-gray-400 text-xl my-4 uppercase">
+              <li className="border-b hover:text-blue-500 m-8 border-gray-400 text-xl my-4 uppercase">
                 <a href="/#projects" onClick={() => setIsNavOpen(false)}>Projects</a>
               </li>
-              <li className="border-bc border-gray-400 text-xl my-4 uppercase">
-                <a href="/#contact" onClick={() => setIsNavOpen(false)}>Contact</a>
+              <li className="border-b  border-gray-400 m-8 text-xl my-4 uppercase">
+                <a href="/#contact" onClick={() => setIsNavOpen(false)}>Contact Me</a>
               </li>
             </ul>
           </div>
