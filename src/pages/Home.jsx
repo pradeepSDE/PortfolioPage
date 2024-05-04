@@ -94,6 +94,7 @@ const Home = () => {
           className="size-7/12  hover:scale-105 sm:mt-10 bg-gradient-to-br from-sky-300 to-indigo-600  shadow-xl shadow-blue-400 rounded-full  border-solid border-transparent    "
           src="/profile.png"
           alt="pradeep"
+          loading="lazy"
         />
       </div>
     </div>

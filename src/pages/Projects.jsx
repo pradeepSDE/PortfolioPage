@@ -47,19 +47,19 @@ const Projects = () => {
     {
       Name: "Weather app",
       img: "/Screenshot 2024-04-13 183727.png",
-      Link: "this is link",
+      Link: "https://weatherbypradeep.surge.sh",
       description: "chatting app using firebase and react",
     },
     {
       Name: "Chat-app",
       img: "/Screenshot 2024-04-13 183648.png",
-      Link: "this is link",
+      Link: "https://chat-app-one-flame.vercel.app",
       description: "chatting app using firebase and react",
     },
     {
       Name: "Tic-tac-toe",
       img: "/Screenshot 2024-04-13 183253.png",
-      Link: "this is link",
+      Link: "https://ticstatiks.surge.sh",
       description: "chatting app using firebase and react",
     },
   ];
@@ -76,8 +76,8 @@ const Projects = () => {
               <div className="flex-col flex bg-white font-semibold justify-center items-center gap-2 p-4 ">
                 <p className="text-lg  font-semibold ">{d.Name}</p>
                 <p>{d.description}</p>
-                <button className="px-6 py-2 rounded-full bg-blue-500 text-white  ">
-                  project
+                <button className="px-6 py-2 rounded-full bg-blue-500 text-white  " >
+                 <a href={d.Link} target=" "> project </a>
                 </button>
               </div>
             </div>

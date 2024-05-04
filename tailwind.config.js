@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
-      Rubik : ['Rubik' , 'sans-serif']
+      Rubik : ['Rubik' , 'sans-serif'],
+      Dancing : ['Dancing Script', 'cursive'],
     },
   },
   plugins: [],

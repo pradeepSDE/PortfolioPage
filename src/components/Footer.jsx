@@ -68,7 +68,7 @@ const Footer = () => {
       <hr className="text-white " />
       <div>
         <div className="bg-[#0e0741] h-24 flex mx-auto mt-auto  justify-center items-center">
-          <h1 className="font-semibold text-xl text-white text-lg flex items-center p-1 ">
+          <h1 className="font-semibold text-xl text-white text-lg flex items-center p-1 font-Dancing font-dancingscript "> 
             Made with <FcLike className="m-2 " /> by Pradeep Bisen
           </h1>
         </div>
