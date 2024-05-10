@@ -92,7 +92,7 @@ const Home = () => {
       <div className="  hover:scale-105 mt-20  hover:rotate-z-45 your-div  transition duration-500  flex sm:flex-1 order-2  items-center   justify-center  ">
         <img
           className="size-7/12  hover:scale-105 sm:mt-10 bg-gradient-to-br from-sky-300 to-indigo-600  shadow-xl shadow-blue-400 rounded-full  border-solid border-transparent    "
-          src="/profile.png"
+          src="profilewebp.webp"
           alt="pradeep"
           loading="lazy"
         />
