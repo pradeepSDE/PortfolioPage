@@ -10,18 +10,18 @@ import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import { useRef } from "react";
 import Footer from "./components/Footer";
+import Chatbot from "./pages/Chatbot/Chatbot";
+import HomeMain from "./pages/Home/HomeMain";
 function App() {
   
   return (
     <div className="App scroll-smooth">
-      <Navbar />
-
-      <Home  />
-      <About  />
-      <Skills />
-       <Projects />
-       <Contact/>
-       <Footer/>
+      
+      <Routes>
+        <Route exact path="/chat" element={<Chatbot />} />
+         <Route exact path="/" element={<HomeMain />} />          
+      </Routes>
+     
     </div>
   );
 }

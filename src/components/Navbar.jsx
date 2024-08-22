@@ -14,7 +14,12 @@ const Navbar = () => {
       <div className=" px-4  mr-4 flex  ">
         <div>
           <h1 className="text-lg hover:border-b-2 uppercase hover:border-b-blue-300 hover:text-blue-500  hidden lg:block font-semibold p-2 m-1">
-            <a href="#">Home</a>
+            <Link to={"/"}>Home</Link>
+          </h1>
+        </div>
+        <div>
+          <h1 className="text-lg hover:border-b-2 uppercase hover:border-b-blue-300 hover:text-blue-500  hidden lg:block font-semibold p-2 m-1">
+            <Link to={"/chat"}>chat</Link>
           </h1>
         </div>
         <div>
