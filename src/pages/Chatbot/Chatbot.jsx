@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import Navbar from "../../components/Navbar";
+
 const { initHist } = require("./initHist");
 function Chatbot() {
   const [promptText, setprompText] = useState("");
@@ -92,7 +92,7 @@ console.log("chatbot")
 
   return (
     <div className=" items-center justify-center bg-blue-500 flex-col h-screen">
-      <Navbar/>
+      
       <input
         value={promptText}
         className="border-2 bg-gray-100 px-4 py-2 w-1/2  "

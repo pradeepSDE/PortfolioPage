@@ -1,41 +1,53 @@
 import React, { useRef, useState } from "react";
 import { IoIosContact } from "react-icons/io";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const scref = useRef(null)
+  const scref = useRef(null);
+  const [formData, setFormData] = useState({
+    from_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  });
 
-    const [formData, setFormData] = useState({
-      from_name: '',
-      last_name : '',
-      email: '',
-      message: ''
-    });
-  
-    const handleChange = async(e) => {
-      
-      await setFormData({ ...formData, [e.target.name]: e.target.value });
-    
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-   
-      emailjs.sendForm('service_na7jol1', 'template_i1jlgmu', scref.current, '5v90ykZ02ZoMgzeN5')
-        .then((result) => {
-          // console.log('Email sent successfully:', result.text);
-          alert("your response has been submitted successfuly ")
-          // You can show a success message to the user here
-        }, (error) => {
-          console.error('Email could not be sent:', error.text);
-          // You can show an error message to the user here
-        });}
+  const handleChange = async (e) => {
+    await setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_na7jol1",
+        "template_i1jlgmu",
+        scref.current,
+        "5v90ykZ02ZoMgzeN5"
+      )
+      .then(
+        (result) => {
+          alert("your response has been submitted successfuly ");
+        },
+        (error) => {
+          console.error("Email could not be sent:", error.text);
+        }
+      );
+  };
   return (
-    <div id="contact" className=" overflow-y-auto scroll-smooth p-4 bg-indigo-50 ">
+    <div
+      id="contact"
+      className=" overflow-y-auto scroll-smooth p-4 bg-slate-50"
+    >
       <h1 className="font-bold text-5xl scroll-smooth justify-center  flex items-center">
-       <IoIosContact className="mx-2 justify-center" /> Contact <span className="text-blue-500 ml-3"> Me</span>
+        <IoIosContact className="mx-2 justify-center" /> CONTACT{" "}
+        <span className="text-blue-500 ml-3"> ME</span>
       </h1>
-      <form  ref={scref} class="w-full  mt-10 px-8 mx-auto max-w-lg" onSubmit={handleSubmit}>
+      <form
+        ref={scref}
+        class="w-full  mt-10 px-8 mx-auto max-w-lg"
+        onSubmit={handleSubmit}
+      >
         <div class="flex flex-wrap  -mx-3 mb-6">
           <div class="w-full md:w-1/2  px-3 mb-6 md:mb-0">
             <label
@@ -53,7 +65,6 @@ const Contact = () => {
               value={formData.from_name}
               onChange={handleChange}
             />
-           
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label
@@ -70,7 +81,6 @@ const Contact = () => {
               name="last_name"
               onChange={handleChange}
               value={formData.last_name}
-             
             />
           </div>
         </div>
@@ -90,7 +100,6 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
             />
-           
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -113,9 +122,8 @@ const Contact = () => {
         <div class="md:flex md:w-1/3 md:items-center">
           <div class="md:w-1/3 flex p-4 ">
             <button
-              class="shadow bg-blue-500  hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-full shadow-lg shadow-blue-400 " 
+              class="shadow bg-blue-500  hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-full shadow-lg shadow-blue-400 "
               type="button"
-
               onClick={handleSubmit}
             >
               Send

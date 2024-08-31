@@ -1,6 +1,7 @@
 import React from "react";
 import CarouselElement from "../components/Carousel";
 import Slider from "react-slick";
+import projectData from '../../src/assets/projectData.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GrProjects } from "react-icons/gr";
@@ -43,32 +44,13 @@ const Projects = () => {
     ],
 
   };
-  const data = [
-    {
-      Name: "Weather app",
-      img: "/Screenshot 2024-04-13 183727.png",
-      Link: "https://weatherbypradeep.surge.sh",
-      description: "chatting app using firebase and react",
-    },
-    {
-      Name: "Chat-app",
-      img: "/Screenshot 2024-04-13 183648.png",
-      Link: "https://chat-app-one-flame.vercel.app",
-      description: "chatting app using firebase and react",
-    },
-    {
-      Name: "Tic-tac-toe",
-      img: "/Screenshot 2024-04-13 183253.png",
-      Link: "https://ticstatiks.surge.sh",
-      description: "chatting app using firebase and react",
-    },
-  ];
+
   return (
-    <div id="projects" className="  pb-10 px-4 mb-20 bg-gradient-to-r from-cyan-100 to-blue-100   w-full mx-auto ">
+    <div id="projects" className="  pb-10 px-4 mb-20  bg-slate-50  w-full mx-auto ">
       <div className="mt-20 ">
         <h1 className="text-5xl p-5 mb-5 flex  justify-center font-bold text-center uppercase"> <GrProjects className="mx-4"/> projects</h1>
         <Slider {...settings}>
-          {data.map((d) => (
+          {projectData.map((d) => (
             <div className="bg-white  mb-10 shadow-md shadow-blue-300 border-3 border-blue-400 gap-2 p-1 rounded-xl h-[450px] text-black">
               <div className="bg-indigo-200 rounded-t-xl  flex justify-center p-2 items-center  ">
                 <img src={d.img} className=" h-64 w-96 " alt="" />
