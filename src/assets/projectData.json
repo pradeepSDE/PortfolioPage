@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Weather app",
+      "img": "/Screenshot 2024-04-13 183727.png",
+      "link": "https://weatherbypradeep.surge.sh",
+      "description": "Weather app using React"
+    },
+    {
+      "name": "Chat-app",
+      "img": "/Screenshot 2024-04-13 183648.png",
+      "link": "https://chat-app-one-flame.vercel.app",
+      "description": "Chatting app using Firebase and React"
+    },
+    {
+      "name": "Tic-tac-toe",
+      "img": "/Screenshot 2024-04-13 183253.png",
+      "link": "https://ticstatiks.surge.sh",
+      "description": "Tic-tac-toe game using React"
+    }
+  ]
+

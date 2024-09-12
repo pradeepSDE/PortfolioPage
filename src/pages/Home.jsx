@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import myPDF from "./Pradeep_bisen_resume.pdf";
+
 const Home = () => {
   const el = React.useRef(null);
 
