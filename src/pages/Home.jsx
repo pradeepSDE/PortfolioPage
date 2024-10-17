@@ -45,7 +45,7 @@ const Home = () => {
         </h2>
         <a
           target="_blank"
-          href="\Pradeep_Bisen_Resume_ (1).pdf"
+          href="/Pradeep_resume_1.pdf"
           download={"pradeep-resume"}
         >
           <button type="download" className="px-5 py-3 flex mr-auto ml-1 sm:ml-12 rounded-full items-center mt-10 hover:justify-between  text-xl text-white font-semibold border-blue-500 bg-blue-700 border-2 shadow-lg shadow-blue-400 hover:bg-blue-900 outline-2 outline-blue-400  ">

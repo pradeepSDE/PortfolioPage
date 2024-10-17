@@ -3,13 +3,19 @@
       "name": "Weather app",
       "img": "/Screenshot 2024-04-13 183727.png",
       "link": "https://weatherbypradeep.surge.sh",
-      "description": "Weather app using React"
+      "description": "Weather app using React and OpenWeatherMap API"
     },
     {
       "name": "Chat-app",
       "img": "/Screenshot 2024-04-13 183648.png",
       "link": "https://chat-app-one-flame.vercel.app",
-      "description": "Chatting app using Firebase and React"
+      "description": "Chat application using React and Firebase"
+    },
+    {
+      "name": "Nxt-Gen Grocery shopping website",
+      "img": "/Screenshot 2024-10-17 075043.png",
+      "link": "https://nxt-gen-grocery-fe.vercel.app/",
+      "description": "Full stack grocery shopping website using React and Node.js"
     },
     {
       "name": "Tic-tac-toe",
