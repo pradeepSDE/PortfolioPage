@@ -10,7 +10,7 @@ const About = () => {
         <CgProfile className="m-2" /> About
         <span className="text-blue-500 ml-3"> Me</span>
       </h1>
-      <div className="sm:flex    m-4 mt-10">
+      <div className="sm:flex justify-center items-center   m-4 mt-10">
         <div className="  w-1/2 h-1/2 mx-auto   rounded-xl grayscale hover:grayscale-0 transition duration-500 sm:ml-10 border-4   border-blue-500 shadow-lg shadow-blue-400 ">
           <img className="rounded-lg h-3/4" src="/Pradeep1.jpg" alt="" />
         </div>
@@ -20,20 +20,12 @@ const About = () => {
             I'm Pradeep <span className="text-blue-600 "> Bisen</span>
           </h2>
           <p className="text-lg sm:text-xl">
-            I am currently in my final year of pursuing a Bachelor of Technology
-            in Electronics and Telecommunication Engineering at GECR College.
-            Throughout my academic journey, I have developed a strong foundation
-            in core subjects, and I take immense pride in my proficiency in the
-            MERN stack. My hands-on experience with full-stack web development
-            showcases my commitment to staying ahead in the field of technology.
-            This combination of theoretical knowledge and practical expertise
-            drives my passion for creating scalable and efficient solutions, and
-            I am constantly exploring new technologies to expand my skill set.
-            <p className="text-lg sm:text-xl">
-              I am eager to explore opportunities where I can apply my expertise
-              in the MERN stack to craft impactful solutions and propel
-              technological advancements.
-            </p>
+            I am a final-year B.Tech student in Electronics and
+            Telecommunication Engineering at Government Engineering College,
+            Raipur College. Currently, I am interning at Eigenplus, where I work
+            with technologies like React, React Native, Docker, and Node.js,
+            gaining hands-on experience in developing robust and scalable
+            applications.
           </p>{" "}
           <br />
           <span className="text-lg sm:text-xl">
